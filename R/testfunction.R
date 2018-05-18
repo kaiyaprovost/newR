@@ -1,3 +1,7 @@
+#' @import raster
+#' @import parallel
+NULL
+
 #' Echo
 #' 
 #' This function echos whatever you give it.
@@ -11,5 +15,11 @@
 
 
 echo = function(echo){
+  return(echo)
+}
+
+.hidden = function(echo){
+  ## this is now an internal function
+  ## you can do newR:::.hidden to call this
   return(echo)
 }
